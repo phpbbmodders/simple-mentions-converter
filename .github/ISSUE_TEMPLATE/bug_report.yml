@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible converter problem.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not post credentials, private forum content, recovery backups, or database dumps.
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Converter commit, phpBB version, PHP version, and database type/version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the command options and a minimal synthetic example, if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: errors
+    attributes:
+      label: Error output
+      description: Remove credentials, private content, and identifying information.
